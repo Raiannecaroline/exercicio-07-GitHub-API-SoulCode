@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="search">
+    <mat-form-field>
+      <mat-label>Pesquise por um usuário do GitHub</mat-label>
+      <input 
+      type="text" 
+      matInput 
+      autocomplete="off"
+      [formControl]="userNameToFind"
+      (keyup.enter)="showDialog()">
+
+      <mat-error>
+        <span>
+          Informe um username para ser pesquisado
+        </span>
+      </mat-error>
+    </mat-form-field>
+
+    <button 
+    mat-stroked-button 
+    color="primary"
+    [disabled]="userNameToFind.invalid"
+    (click)="showDialog()">
+      <mat-icon>search</mat-icon>
+    </button>
+    
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<h2 class="search" mat-dialog-title>Procurando Usuário {{ username }}...</h2>
+
+<div mat-dialog-content>
+  
+  <mat-progress-spinner 
+  color="primary" 
+  mode="indeterminate"
+  *ngIf="user == null">
+  Pesquisando...
+  </mat-progress-spinner>
+
+  <section class="container-perfil">
+
+    <mat-card-header>
+      <img [src]="user?.avatar_url">
+      <h3><a [href]="user?.html_url">{{ user?.login }}</a></h3>
+      <h4>{{ user?.bio }}</h4>
+    </mat-card-header>
+
+    <main class="container-informacoes">
+      <div class="info">
+        <h5>ID da conta {{user?.id}}</h5>
+        <h5>Conta criada em {{ user?.created_at | date}}</h5>
+        <h5>Localização {{ user?.location }}</h5>
+      </div>
+  
+      <div class="info">
+        <h5>Seguindo {{ user?.followers }}</h5>
+        <h5>Seguidores {{ user?.following }}</h5>
+        <h5>Repositórios {{ user?.public_repos }}</h5>
+      </div>
+    </main>
+
+  </section>
+
+  <ul>
+    <h3>Lista dos Repositórios:</h3>
+    <li *ngFor="let index of repositoriesLists">
+      <p>
+        {{ index.name }}
+        <mat-icon>star</mat-icon> {{ index.stargazers_count }} {{ index.language }}
+      </p>
+      <button mat-raised-button>
+        <a [href]="index.html_url" target="_blank">Acesse no GitHub</a>
+      </button>
+    </li>
+  </ul>
+
+</div>
