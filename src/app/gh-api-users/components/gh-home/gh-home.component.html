@@ -1,8 +1,14 @@
 <div class="container">
+
+  <div class="text-css">
+    <h1 class="line">Pesquise qualquer pessoa no GitHub...</h1>
+  </div>
+  
   <div class="search">
-    <mat-form-field>
-      <mat-label>Pesquise por um usuário do GitHub</mat-label>
+    <mat-form-field appearance="legacy">
+      <mat-label class="text-caixa">Pesquise por um usuário do GitHub</mat-label>
       <input 
+      class="input-text"
       type="text" 
       matInput 
       autocomplete="off"
@@ -17,6 +23,7 @@
     </mat-form-field>
 
     <button 
+    class="btn"
     mat-stroked-button 
     color="primary"
     [disabled]="userNameToFind.invalid"

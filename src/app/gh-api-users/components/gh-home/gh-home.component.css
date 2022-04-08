@@ -1,13 +1,115 @@
+/*Fonte do google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*Container Principal*/
 .container{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #add8e6;
+  flex-direction: column;
+  background: rgb(20,33,28);
+  background: linear-gradient(30deg, rgba(20,33,28,1) 24%, rgba(145,148,156,1) 68%, rgba(74,78,91,1) 100%);
+  background-size: 300% 300%; 
+  animation: colors 15s ease infinite; 
 }
 
+/*Container de Pesquisa*/
 .container .search{
   display: flex;
   flex-direction: column;
   width: 400px;
+  padding: 80px;
+  border: 2px solid #ffffff;
+  border-radius: 75px;
+  background-image: url("https://imagensemoldes.com.br/wp-content/uploads/2020/07/Lupa-com-Fundo-Transparente.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/*Área de Input*/
+.input-text{
+  color: rgba(255, 255, 255, .75);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Área dentro do Input*/
+.text-caixa{
+  color: rgba(255, 255, 255, .75);
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Texto do H1 acima, espaçamento*/
+.text-css{
+  display: flex;
+  margin: 20px;
+}
+
+/*Estilização de texto, fonte, cor e efeito do texto*/
+div .text-css, h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: rgba(255, 255, 255, .75);
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*H1 com uma borda a direita, que serve como cursor para a animação*/
+h1{
+  border-right: 2px solid rgba(255, 255, 255, .75);
+}
+
+/*Classe do H1 que coloquei os passos para a animação acontecer*/
+.line{
+  animation: line 500ms steps(40) infinite normal, 
+  typeLine 4s steps(40) 1s normal both;
+}
+
+/*Botão de pesquisa*/
+.btn{
+  background-color: #fefefefe;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/*Efeito no botão*/
+.btn:hover{
+  background-color: #c4c4c4;
+  transition: all 0.5s ease;
+}
+
+/*Keyframes do gradiente do background*/
+@keyframes colors{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+/*Keyframes da animação CSS no texto H1*/
+@keyframes line{
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 480px;
+  }
 }
