@@ -1,12 +1,16 @@
 ## Layout Desktop
 
-![CapGitHub]()
+![Layout 01](https://github.com/Raiannecaroline/exercicio-07-GitHub-API-SoulCode/blob/main/img/Layout.jpg)
+
+![Layout 02](https://github.com/Raiannecaroline/exercicio-07-GitHub-API-SoulCode/blob/main/img/Layout%202.jpg)
+
+![Layout 02](https://github.com/Raiannecaroline/exercicio-07-GitHub-API-SoulCode/blob/main/img/Layout%203.jpg)
 
 
 
 # Ache seu perfil no GitHub - Exercício 07 - SoulCode Academy
 
-Exercício feito com o Angular, uma requisição de uma API do GitHub para achar os perfils do GitHub e para isso fiz o consumo dessa API.
+Exercício feito com o Angular, uma requisição HTTP de uma API do GitHub para achar os perfils do GitHub e para isso fiz o consumo dessa API.
 
 ## 🔧 Funçoes (opcional)
 
