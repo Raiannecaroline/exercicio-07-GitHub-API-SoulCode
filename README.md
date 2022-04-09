@@ -1,27 +1,33 @@
-# RequisicaoHttp
+## Layout Desktop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+![CapGitHub]()
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Ache seu perfil no GitHub - Exercício 07 - SoulCode Academy
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Exercício feito com o Angular, uma requisição de uma API do GitHub para achar os perfils do GitHub e para isso fiz o consumo dessa API.
 
-## Build
+## 🔧 Funçoes (opcional)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Função 01:
+- Consumir a API do GitHub para achar perfils do GitHub
 
-## Running unit tests
+## Veja o desenvolvimento do projeto:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[![Github](https://badges.aleen42.com/src/github.svg)](https://github.com/Raiannecaroline/exercicio-07-GitHub-API-SoulCode)
 
-## Running end-to-end tests
+## Feito Com:
+[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/pt-br/windows/get-windows-10)
+[![IDE](https://badges.aleen42.com/src/visual_studio_code.svg)](https://code.visualstudio.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JAVASCRIPT](https://badges.aleen42.com/src/javascript.svg)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![ANGULAR](https://badges.aleen42.com/src/angular.svg)](https://angular.io/)
+[![TYPESCRIPT](https://badges.aleen42.com/src/typescript.svg)](https://www.typescriptlang.org/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Support Ou Contato
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/raiannecaroline_/)
+[![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Raiannecaroline)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raiannecaroline/)

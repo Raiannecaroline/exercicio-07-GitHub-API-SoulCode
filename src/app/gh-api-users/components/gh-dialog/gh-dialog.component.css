@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
-  max-width: 60vw;
+  width: 100vw;
   background: rgba(25, 25, 25, .75);
   color: rgba(255,255,255,0.75);
 }
@@ -27,6 +27,10 @@
   border-radius: 25%;
 }
 
+.box-perfil{
+  display: flex;
+}
+
 .perfil-links{
   display: flex;
   align-items: center;
@@ -36,6 +40,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  border: 1px solid rgba(255,255,255,0.75);
+  padding: 15px;
+  border-radius: 50px;
 }
 
 .info{
@@ -46,15 +53,29 @@
 }
 
 .repos-container{
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  gap: 0.5em;
-  width: fit-content;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* justify-content: center; */
+  /* flex-flow: column wrap; */
+  gap: 1.5em;
+  width: -moz-fit-content;
+  width: min-content;
+  align-items: center;
+  list-style-type: none;
 }
 
 .list-repos{
   text-decoration: none;
-  border: 1px solid white;
-  padding: 5px;
+  border: 1px solid rgba(255,255,255,0.75);
+  border-radius: 15px;
+  padding: 30px;
+  -webkit-box-shadow: 5px 4px 9px 4px rgba(255,254,255,0.61); 
+  box-shadow: 5px 4px 9px 4px rgba(255,254,255,0.61);
+}
+
+.list-repos:hover{
+  margin-bottom: 15px;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }

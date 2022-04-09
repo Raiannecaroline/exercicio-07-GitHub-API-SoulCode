@@ -14,7 +14,7 @@
     <mat-card-header class="perfil">
       <img [src]="user?.avatar_url" class="foto-perfil">
       <h3>{{ user?.name }}</h3>
-      <h3 mat-dialog-title>
+      <h3 mat-dialog-title class="box-perfil">
         <p><mat-icon>account_box</mat-icon></p>
         <a [href]="user?.html_url" target="_blank" class="perfil-links">{{ user?.login }}</a>
       </h3>
@@ -55,8 +55,8 @@
 
   </section>
 
+  <h3>Lista dos Repositórios:</h3>
   <ul class="repos-container">
-    <h3>Lista dos Repositórios:</h3>
     <li *ngFor="let index of repositoriesLists" class="list-repos">
       <p>
         {{ index.name }}
